@@ -1,165 +1,149 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>HE-MAN | BNB Chain</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HE-MAN | Official Website</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
 
-<style>
-body{
-margin:0;
-font-family:Arial,sans-serif;
-background:#050816;
-color:white;
-text-align:center;
-}
+        body {
+            background-color: #050816;
+            color: #ffffff;
+            text-align: center;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            padding: 40px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
 
-.hero{
-padding:60px 20px;
-background:linear-gradient(180deg,#111b40,#050816);
-}
+        .official-badge {
+            color: #ffd700;
+            font-size: 22px;
+            font-weight: 800;
+            letter-spacing: 2px;
+            margin-bottom: 25px;
+            text-transform: uppercase;
+            text-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+        }
 
-.logo{
-width:180px;
-height:180px;
-border-radius:50%;
-object-fit:contain;
-margin-bottom:25px;
-}
+        .logo-box {
+            margin-bottom: 25px;
+            width: 100%;
+            max-width: 380px;
+        }
 
-h1{
-font-size:55px;
-color:#ffd700;
-margin:10px;
-}
+        .logo-img {
+            width: 100%;
+            height: auto;
+            border-radius: 20px;
+            border: 2px solid #ffd700;
+            box-shadow: 0 0 30px rgba(255, 215, 0, 0.4);
+            display: block;
+        }
 
-.subtitle{
-font-size:20px;
-max-width:700px;
-margin:auto;
-line-height:1.6;
-}
+        .main-title {
+            font-size: 24px;
+            color: #ffd700;
+            margin-bottom: 20px;
+            max-width: 700px;
+            line-height: 1.4;
+        }
 
-.btn{
-display:inline-block;
-margin-top:30px;
-padding:15px 40px;
-background:#ffd700;
-color:#000;
-font-weight:bold;
-border-radius:30px;
-text-decoration:none;
-}
+        .description {
+            font-size: 16px;
+            max-width: 700px;
+            color: #e0e0e0;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
 
-.section{
-padding:50px 20px;
-}
+        .btn-buy {
+            display: inline-block;
+            background: linear-gradient(135deg, #ffd700 0%, #ffa500 100%);
+            color: #000000;
+            font-size: 22px;
+            font-weight: bold;
+            padding: 16px 45px;
+            border-radius: 35px;
+            text-decoration: none;
+            box-shadow: 0 4px 20px rgba(255, 215, 0, 0.4);
+            transition: all 0.3s ease;
+            margin-bottom: 40px;
+        }
 
-.card{
-background:#10182f;
-max-width:800px;
-margin:20px auto;
-padding:25px;
-border-radius:20px;
-box-shadow:0 0 20px #000;
-}
+        .btn-buy:hover {
+            transform: scale(1.08);
+            box-shadow: 0 6px 25px rgba(255, 215, 0, 0.6);
+        }
 
-h2{
-color:#ffd700;
-}
+        .info-block {
+            max-width: 700px;
+            border-top: 1px solid #1e2d5a;
+            padding-top: 30px;
+        }
 
-.item{
-padding:12px;
-border-bottom:1px solid #333;
-}
+        .tagline {
+            font-size: 18px;
+            font-weight: bold;
+            color: #ffffff;
+            margin-bottom: 15px;
+        }
 
-footer{
-padding:30px;
-background:#02030a;
-color:#aaa;
-}
+        .tokenomics-text {
+            font-size: 15px;
+            color: #cccccc;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
 
-</style>
+        .footer-text {
+            font-size: 16px;
+            color: #ffd700;
+            font-weight: 600;
+        }
+    </style>
 </head>
-
-
 <body>
 
+    <div class="official-badge">OFFICIAL HEMAN WEBSITE</div>
 
-<div class="hero">
+    <!-- HE-MAN Şəkli -->
+    <div class="logo-box">
+        <img src="https://i.ibb.co/3ykG8Lq/47051.png" alt="HE-MAN Masters of the Universe" class="logo-img">
+    </div>
 
-<img src="logo.png" class="logo">
+    <!-- Mətnlər -->
+    <h1 class="main-title">⚔️ BY THE POWER OF GRAYSKULL.! 🗡️⚡</h1>
+    
+    <p class="description">
+        The most powerful meme token in the universe has arrived on BNB Chain! Skeletor can't stop us this time.!<br><br>
+        Grab your Power Sword, join the Masters of the Universe, and let's send $HEMAN straight to the moon.! 🚀🌕<br><br>
+        No room for paper hands — only true strength. Only real investors who hold until the end will achieve victory.! 🚀💥⚔️🏆
+    </p>
 
-<h1>HE-MAN</h1>
+    <!-- BUY NOW Düyməsi (Token linki gələnədək four.meme ana səhifəsinə yönləndirir) -->
+    <div>
+        <a href="https://four.meme" target="_blank" class="btn-buy">BUY NOW</a>
+    </div>
 
-<p class="subtitle">
-100% Transparent. Ownerless. Built for Security.
-<br><br>
-Powered by advanced tokenomics designed for the future and long-term growth.
-</p>
-
-
-<a href="#" class="btn">BUY NOW</a>
-
-
-</div>
-
-
-
-<div class="section">
-
-
-<div class="card">
-
-<h2>Tokenomics</h2>
-
-<div class="item">Total Supply: 1,000,000,000 HEMAN</div>
-<div class="item">Project Fund Wallet: 5%</div>
-<div class="item">Automatic Burn: 5%</div>
-<div class="item">Holder Rewards: 10% (BNB)</div>
-<div class="item">Liquidity Allocation: 80%</div>
-
-
-</div>
-
-
-
-<div class="card">
-
-<h2>Roadmap</h2>
-
-<div class="item">Phase 1: Launch & Community Building</div>
-<div class="item">Phase 2: DEX Listing & Growth</div>
-<div class="item">Phase 3: Global Expansion</div>
-
-
-</div>
-
-
-
-<div class="card">
-
-<h2>Join HE-MAN</h2>
-
-<p>
-The future of transparent and rewarding DeFi trading on BNB Chain.
-</p>
-
-<p>
-X | Telegram | BscScan
-</p>
-
-</div>
-
-
-</div>
-
-
-
-<footer>
-
-© 2026 HE-MAN. All Rights Reserved.
-
-</footer>
-
+    <!-- Tokenomika Mətn Bloku -->
+    <div class="info-block">
+        <p class="tagline">100% Transparent. Ownerless. Built for Security.!</p>
+        <p class="tokenomics-text">
+            Powered by advanced tokenomics designed for the future and long-term growth:<br>
+            <strong>5% Project Fund Wallet, 5% Automatic Burn, 10% Holder Rewards, and 80% Liquidity Allocation.!</strong>
+        </p>
+        <p class="footer-text">
+            Experience the future of trusted, transparent, secure, rewarding, and long-term DeFi trading.! 🚀
+        </p>
+    </div>
 
 </body>
 </html>
