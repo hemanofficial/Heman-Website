@@ -1,33 +1,194 @@
-<!-- HE-MAN Tokenomics Section -->
-<div style="text-align: center; color: #ffffff; padding: 30px 15px; background-color: #080d1a; border-radius: 16px;">
-  
-  <h2 style="color: #ffcc00; font-weight: 800; font-size: 2em; letter-spacing: 1px; margin-bottom: 10px;">
-    HE-MAN
-  </h2>
-  
-  <p style="font-size: 1.1em; color: #4ade80; font-weight: 600; margin-bottom: 20px;">
-    ✅ 100% Transparent. Ownerless. Built for Security.!
-  </p>
-  
-  <p style="color: #94a3b8; font-size: 0.95em; max-width: 500px; margin: 0 auto 25px auto; line-height: 1.5;">
-    Powered by advanced tokenomics designed for the future and long-term growth:
-  </p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HE-MAN | Official Website</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
 
-  <!-- 100% Liquidity Single Box -->
-  <div style="background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); border: 1.5px solid #ffcc00; border-radius: 12px; padding: 18px 25px; max-width: 380px; margin: 0 auto; display: flex; align-items: center; justify-content: center; gap: 12px; box-shadow: 0 4px 15px rgba(255, 204, 0, 0.15);">
-    <span style="font-size: 1.6em;">💧</span>
-    <span style="font-size: 1.3em; font-weight: 800; color: #ffcc00;">100%</span>
-    <span style="font-size: 1.1em; font-weight: 600; color: #f8fafc;">Liquidity Allocation</span>
-  </div>
+        body {
+            background-color: #050816;
+            color: #ffffff;
+            text-align: center;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            padding: 40px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
 
-  <p style="color: #64748b; font-size: 0.85em; max-width: 480px; margin: 30px auto 0 auto; line-height: 1.4;">
-    Experience the future of trusted, transparent, secure, rewarding, and long-term DeFi trading.!
-  </p>
-  
-  <hr style="border: 0; border-top: 1px solid #1e293b; margin: 30px auto 20px auto; max-width: 80%;">
+        .official-badge {
+            color: #ffd700;
+            font-size: 18px;
+            font-weight: 800;
+            letter-spacing: 2px;
+            margin-bottom: 25px;
+            text-transform: uppercase;
+            text-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+        }
 
-  <p style="color: #475569; font-size: 0.8em; margin: 0;">
-    © 2026 HE-MAN. All Rights Reserved.
-  </p>
+        .logo-box {
+            margin-bottom: 30px;
+            width: 100%;
+            max-width: 320px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
 
-</div>
+        .logo-img {
+            width: 100%;
+            height: auto;
+            border-radius: 20px;
+            border: 2px solid #ffd700;
+            box-shadow: 0 0 30px rgba(255, 215, 0, 0.4);
+            display: block;
+        }
+
+        .main-title {
+            font-size: 24px;
+            color: #ffd700;
+            margin-bottom: 20px;
+            max-width: 700px;
+            line-height: 1.4;
+        }
+
+        .description {
+            font-size: 16px;
+            max-width: 700px;
+            color: #e0e0e0;
+            line-height: 1.6;
+            margin-bottom: 35px;
+        }
+
+        .btn-buy {
+            display: inline-block;
+            background: linear-gradient(135deg, #ffd700 0%, #ffa500 100%);
+            color: #000000;
+            font-size: 22px;
+            font-weight: bold;
+            padding: 16px 45px;
+            border-radius: 35px;
+            text-decoration: none;
+            box-shadow: 0 4px 20px rgba(255, 215, 0, 0.4);
+            transition: all 0.3s ease;
+            margin-bottom: 45px;
+        }
+
+        .btn-buy:hover {
+            transform: scale(1.08);
+            box-shadow: 0 6px 25px rgba(255, 215, 0, 0.6);
+        }
+
+        .info-block {
+            max-width: 700px;
+            border-top: 1px solid #1e2d5a;
+            padding-top: 35px;
+            margin-bottom: 40px;
+            width: 100%;
+        }
+
+        .tagline {
+            font-size: 26px;
+            font-weight: bold;
+            color: #ffd700;
+            margin-bottom: 15px;
+        }
+
+        .tokenomics-subtitle {
+            font-size: 16px;
+            color: #ffffff;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
+        .tokenomics-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            margin: 25px 0;
+            text-align: left;
+        }
+
+        .tokenomics-card {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 215, 0, 0.3);
+            border-radius: 12px;
+            padding: 15px;
+            font-size: 15px;
+            color: #e0e0e0;
+        }
+
+        .tokenomics-card strong {
+            color: #ffd700;
+            font-size: 18px;
+        }
+
+        .tokenomics-text {
+            font-size: 15px;
+            color: #cccccc;
+            line-height: 1.6;
+            margin-top: 20px;
+        }
+
+        .footer-copyright {
+            font-size: 14px;
+            color: #888888;
+            margin-top: auto;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 20px;
+            width: 100%;
+            max-width: 700px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="official-badge">OFFICIAL HE-MAN WEBSITE</div>
+
+    <div class="logo-box">
+        <img src="IMG_20260802_201523.jpg" alt="HE-MAN Masters of the Universe" class="logo-img">
+    </div>
+
+    <h1 class="main-title">⚔️ BY THE POWER OF GRAYSKULL.! 🗡️⚡</h1>
+    
+    <p class="description">
+        The most powerful meme token in the universe has arrived on BNB Chain! Skeletor can't stop us this time.!<br><br>
+        Grab your Power Sword, join the Masters of the Universe, and let's send $HEMAN straight to the moon.! 🚀<br><br>
+        No room for paper hands — only true strength. Only real investors who hold until the end will achieve victory.! 🏆
+    </p>
+
+    <div>
+        <a href="https://four.meme" target="_blank" class="btn-buy">BUY NOW</a>
+    </div>
+
+    <div class="info-block">
+        <h2 class="tagline">HE-MAN</h2>
+        <p class="tokenomics-subtitle">✅ 100% Transparent. Ownerless. Built for Security.!</p>
+        
+        <p class="tokenomics-text">Powered by advanced tokenomics designed for the future and long-term growth:</p>
+
+        <div class="tokenomics-grid">
+            <div class="tokenomics-card">🔴 Funds Recipient Wallet: <strong>0%</strong></div>
+            <div class="tokenomics-card">🟢 Burn (Reduce Supply): <strong>0%</strong></div>
+            <div class="tokenomics-card">🟡 Divide To Holders: <strong>0%</strong></div>
+            <div class="tokenomics-card">🔵 Add to Liquidity: <strong>100%</strong></div>
+        </div>
+
+        <p class="tokenomics-text">
+            Experience the future of trusted, transparent, secure, rewarding, and long-term DeFi trading.!
+        </p>
+    </div>
+
+    <div class="footer-copyright">
+        © 2026 HE-MAN. All Rights Reserved.
+    </div>
+
+</body>
+</html>
