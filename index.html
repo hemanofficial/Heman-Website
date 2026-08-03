@@ -1,242 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>HE-MAN | Official Website</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HE-MAN | Official Website</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
 
-<style>
+        body {
+            background-color: #050816;
+            color: #ffffff;
+            text-align: center;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            padding: 40px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
 
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial,sans-serif;
-}
+        .official-badge {
+            color: #ffd700;
+            font-size: 18px;
+            font-weight: 800;
+            letter-spacing: 2px;
+            margin-bottom: 25px;
+            text-transform: uppercase;
+            text-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+        }
 
-body{
-background:#050816;
-color:#fff;
-text-align:center;
-}
+        .logo-box {
+            margin-bottom: 30px;
+            width: 100%;
+            max-width: 320px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
 
-.container{
-max-width:1100px;
-margin:auto;
-padding:30px 20px;
-}
+        .logo-img {
+            width: 100%;
+            height: auto;
+            border-radius: 20px;
+            border: 2px solid #ffd700;
+            box-shadow: 0 0 30px rgba(255, 215, 0, 0.4);
+            display: block;
+        }
 
-.badge{
-display:inline-block;
-padding:10px 25px;
-border:2px solid gold;
-border-radius:40px;
-color:gold;
-font-weight:bold;
-margin-bottom:25px;
-}
+        .main-title {
+            font-size: 24px;
+            color: #ffd700;
+            margin-bottom: 20px;
+            max-width: 700px;
+            line-height: 1.4;
+        }
 
-.logo-img{
-width:260px;
-max-width:90%;
-border-radius:20px;
-border:2px solid gold;
-box-shadow:0 0 30px rgba(255,215,0,.45);
-}
+        .description {
+            font-size: 16px;
+            max-width: 700px;
+            color: #e0e0e0;
+            line-height: 1.6;
+            margin-bottom: 35px;
+        }
 
-h1{
-color:gold;
-font-size:42px;
-margin:30px 0 15px;
-}
+        .btn-buy {
+            display: inline-block;
+            background: linear-gradient(135deg, #ffd700 0%, #ffa500 100%);
+            color: #000000;
+            font-size: 22px;
+            font-weight: bold;
+            padding: 16px 45px;
+            border-radius: 35px;
+            text-decoration: none;
+            box-shadow: 0 4px 20px rgba(255, 215, 0, 0.4);
+            transition: all 0.3s ease;
+            margin-bottom: 45px;
+        }
 
-.description{
-max-width:750px;
-margin:auto;
-font-size:18px;
-line-height:1.8;
-color:#ddd;
-}
+        .btn-buy:hover {
+            transform: scale(1.08);
+            box-shadow: 0 6px 25px rgba(255, 215, 0, 0.6);
+        }
 
-.buy{
-display:inline-block;
-margin-top:35px;
-background:gold;
-color:#000;
-padding:18px 45px;
-font-size:22px;
-font-weight:bold;
-border-radius:40px;
-text-decoration:none;
-transition:.3s;
-}
+        .info-block {
+            max-width: 700px;
+            border-top: 1px solid #1e2d5a;
+            padding-top: 35px;
+            margin-bottom: 40px;
+            width: 100%;
+        }
 
-.buy:hover{
-transform:scale(1.05);
-}
+        .tagline {
+            font-size: 26px;
+            font-weight: bold;
+            color: #ffd700;
+            margin-bottom: 15px;
+        }
 
-.section{
-margin-top:70px;
-}
+        .tokenomics-subtitle {
+            font-size: 16px;
+            color: #ffffff;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
 
-.section h2{
-color:gold;
-margin-bottom:25px;
-font-size:34px;
-}
+        .tokenomics-text {
+            font-size: 15px;
+            color: #cccccc;
+            line-height: 1.6;
+            margin-top: 15px;
+        }
 
-.grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-gap:20px;
-}
-
-.card{
-background:#10192d;
-padding:25px;
-border-radius:18px;
-border:1px solid rgba(255,215,0,.2);
-}
-
-.card h3{
-color:gold;
-margin-bottom:10px;
-}
-
-.card p{
-font-size:18px;
-}
-
-.contract{
-margin-top:60px;
-background:#10192d;
-padding:25px;
-border-radius:20px;
-}
-
-.contract h3{
-color:gold;
-margin-bottom:15px;
-}
-
-.address{
-background:#1a243d;
-padding:15px;
-border-radius:12px;
-word-break:break-all;
-}
-
-footer{
-margin-top:70px;
-padding:25px;
-color:#888;
-border-top:1px solid #222;
-}
-
-</style>
+        .footer-copyright {
+            font-size: 14px;
+            color: #888888;
+            margin-top: auto;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 20px;
+            width: 100%;
+            max-width: 700px;
+        }
+    </style>
 </head>
-
 <body>
 
-<div class="container">
+    <div class="official-badge">OFFICIAL HE-MAN WEBSITE</div>
 
-<div class="badge">
-OFFICIAL HE-MAN WEBSITE
-</div>
+    <div class="logo-box">
+        <img src="IMG_20260802_201523.jpg" alt="HE-MAN Masters of the Universe" class="logo-img">
+    </div>
 
-<img src="IMG_20260802_201523.jpg" class="logo-img">
+    <h1 class="main-title">⚔️ BY THE POWER OF GRAYSKULL.! 🗡️⚡</h1>
+    
+    <p class="description">
+        The most powerful meme token in the universe has arrived on BNB Chain! Skeletor can't stop us this time.!<br><br>
+        Grab your Power Sword, join the Masters of the Universe, and let's send $HEMAN straight to the moon.! 🚀<br><br>
+        No room for paper hands — only true strength. Only real investors who hold until the end will achieve victory.! 🏆
+    </p>
 
-<h1>⚔️ HE-MAN ⚔️</h1>
+    <div>
+        <a href="https://four.meme" target="_blank" class="btn-buy">BUY NOW</a>
+    </div>
 
-<p class="description">
-100% Transparent • Ownerless • Built for Security.<br><br>
-A community-driven meme token on BNB Chain focused on transparency, simplicity and long-term growth.
-</p>
+    <div class="info-block">
+        <h2 class="tagline">HE-MAN</h2>
+        <p class="tokenomics-subtitle">✅ 100% Transparent. Ownerless. Built for Security.!</p>
 
-<a href="#" class="buy">
-BUY NOW
-</a>
+        <p class="tokenomics-text">
+            Experience the future of trusted, transparent, secure, rewarding, and long-term DeFi trading.!
+        </p>
+    </div>
 
-<div class="section">
-
-<h2>TOKENOMICS</h2>
-
-<div class="grid">
-
-<div class="card">
-<h3>Buy Tax</h3>
-<p>1%</p>
-</div>
-
-<div class="card">
-<h3>Sell Tax</h3>
-<p>1%</p>
-</div>
-
-<div class="card">
-<h3>Auto Liquidity</h3>
-<p>100%</p>
-</div>
-
-<div class="card">
-<h3>Funds Wallet</h3>
-<p>0%</p>
-</div><div class="card">
-<h3>Burn</h3>
-<p>0%</p>
-</div>
-
-<div class="card">
-<h3>Holder Rewards</h3>
-<p>0%</p>
-</div>
-
-<div class="card">
-<h3>Network</h3>
-<p>BNB Chain</p>
-</div>
-
-<div class="card">
-<h3>Total Supply</h3>
-<p>1,000,000,000</p>
-</div>
-
-</div>
-</div>
-
-<div class="contract">
-
-<h3>Contract Address</h3>
-
-<div class="address">
-Coming Soon
-</div>
-
-<br>
-
-<h3>LP Lock</h3>
-
-<div class="address">
-Coming Soon
-</div>
-
-<br>
-
-<h3>Contract Verification</h3>
-
-<div class="address">
-Coming Soon
-</div>
-
-</div>
-
-<footer>
-
-<p>© 2026 HE-MAN. All Rights Reserved.</p>
-
-</footer>
-
-</div>
+    <div class="footer-copyright">
+        © 2026 HE-MAN. All Rights Reserved.
+    </div>
 
 </body>
 </html>
