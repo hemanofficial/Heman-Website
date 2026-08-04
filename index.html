@@ -10,7 +10,6 @@
             margin: 0;
             padding: 0;
         }
-
         body {
             background-color: #050816;
             color: #ffffff;
@@ -22,7 +21,6 @@
             align-items: center;
             min-height: 100vh;
         }
-
         .official-badge {
             color: #ffd700;
             font-size: 18px;
@@ -32,7 +30,6 @@
             text-transform: uppercase;
             text-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
         }
-
         .logo-box {
             margin-bottom: 30px;
             width: 100%;
@@ -41,7 +38,6 @@
             justify-content: center;
             align-items: center;
         }
-
         .logo-img {
             width: 100%;
             height: auto;
@@ -50,7 +46,6 @@
             box-shadow: 0 0 30px rgba(255, 215, 0, 0.4);
             display: block;
         }
-
         .main-title {
             font-size: 24px;
             color: #ffd700;
@@ -58,7 +53,6 @@
             max-width: 700px;
             line-height: 1.4;
         }
-
         .description {
             font-size: 16px;
             max-width: 700px;
@@ -66,7 +60,6 @@
             line-height: 1.6;
             margin-bottom: 35px;
         }
-
         .btn-buy {
             display: inline-block;
             background: linear-gradient(135deg, #ffd700 0%, #ffa500 100%);
@@ -78,14 +71,53 @@
             text-decoration: none;
             box-shadow: 0 4px 20px rgba(255, 215, 0, 0.4);
             transition: all 0.3s ease;
-            margin-bottom: 45px;
+            margin-bottom: 25px;
         }
-
         .btn-buy:hover {
             transform: scale(1.08);
             box-shadow: 0 6px 25px rgba(255, 215, 0, 0.6);
         }
-
+        .ca-container {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 215, 0, 0.4);
+            border-radius: 12px;
+            padding: 15px;
+            max-width: 700px;
+            width: 100%;
+            margin-bottom: 45px;
+            word-break: break-all;
+        }
+        .ca-title {
+            font-size: 13px;
+            color: #ffd700;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .ca-address {
+            font-family: monospace;
+            font-size: 14px;
+            color: #ffffff;
+            background: rgba(0, 0, 0, 0.4);
+            padding: 8px;
+            border-radius: 6px;
+            display: block;
+            margin-bottom: 10px;
+        }
+        .btn-copy {
+            background: #ffd700;
+            border: none;
+            color: #000000;
+            font-weight: bold;
+            padding: 8px 16px;
+            border-radius: 15px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: 0.2s;
+        }
+        .btn-copy:hover {
+            background: #ffa500;
+        }
         .info-block {
             max-width: 700px;
             border-top: 1px solid #1e2d5a;
@@ -93,21 +125,18 @@
             margin-bottom: 40px;
             width: 100%;
         }
-
         .tagline {
             font-size: 26px;
             font-weight: bold;
             color: #ffd700;
             margin-bottom: 15px;
         }
-
         .tokenomics-subtitle {
             font-size: 16px;
             color: #ffffff;
             margin-bottom: 20px;
             font-weight: 600;
         }
-
         .supply-card {
             background: rgba(255, 215, 0, 0.1);
             border: 2px solid #ffd700;
@@ -118,12 +147,10 @@
             margin-bottom: 20px;
             box-shadow: 0 0 15px rgba(255, 215, 0, 0.2);
         }
-
         .supply-card strong {
             color: #ffd700;
             font-size: 20px;
         }
-
         .tokenomics-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -131,7 +158,6 @@
             margin: 25px 0;
             text-align: left;
         }
-
         .tokenomics-card {
             background: rgba(255, 255, 255, 0.05);
             border: 1px solid rgba(255, 215, 0, 0.3);
@@ -140,19 +166,16 @@
             font-size: 15px;
             color: #e0e0e0;
         }
-
         .tokenomics-card strong {
             color: #ffd700;
             font-size: 18px;
         }
-
         .tokenomics-text {
             font-size: 15px;
             color: #cccccc;
             line-height: 1.6;
             margin-top: 20px;
         }
-
         .footer-copyright {
             font-size: 14px;
             color: #888888;
@@ -181,7 +204,13 @@
     </p>
 
     <div>
-        <a href="https://four.meme" target="_blank" class="btn-buy">BUY NOW</a>
+        <a href="https://four.meme/token/0x2461c9f3c1369ac4aa5c3805a5419a6d91ceffff" target="_blank" class="btn-buy">BUY NOW</a>
+    </div>
+
+    <div class="ca-container">
+        <div class="ca-title">Contract Address (CA)</div>
+        <code class="ca-address" id="ca">0x2461c9f3c1369ac4aa5c3805a5419a6d91ceffff</code>
+        <button class="btn-copy" onclick="copyCA()">Copy CA</button>
     </div>
 
     <div class="info-block">
@@ -190,7 +219,6 @@
         
         <p class="tokenomics-text" style="margin-bottom: 20px;">Powered by advanced tokenomics designed for the future and long-term growth:</p>
 
-        <!-- Total Supply Block -->
         <div class="supply-card">
             🪙 Total Supply: <strong>1,000,000,000</strong>
         </div>
@@ -210,6 +238,14 @@
     <div class="footer-copyright">
         © 2026 HE-MAN. All Rights Reserved.
     </div>
+
+    <script>
+        function copyCA() {
+            const caText = document.getElementById("ca").innerText;
+            navigator.clipboard.writeText(caText);
+            alert("CA kopyalandı!");
+        }
+    </script>
 
 </body>
 </html>
